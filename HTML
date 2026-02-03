@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Qatar Visa Medical Appointment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Welcome to Qatar Visa Medical Appointment</h1>
+
+    <form id="appointmentForm">
+
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="tel" id="phone" placeholder="Your WhatsApp Number" required>
+
+        <label>Select Location</label>
+        <select id="location" required>
+            <option value="">Choose Location</option>
+            <option value="Islamabad">Islamabad</option>
+            <option value="Karachi">Karachi</option>
+        </select>
+
+        <div id="dateBox" style="display:none;">
+            <label>Select Date</label>
+            <input type="date" id="date" required>
+        </div>
+
+        <div id="timeBox" style="display:none;">
+            <label>Select Time Slot</label>
+            <select id="time" required>
+                <option value="">Select Time</option>
+                <option>09:00 AM</option>
+                <option>11:00 AM</option>
+                <option>01:00 PM</option>
+                <option>03:00 PM</option>
+            </select>
+        </div>
+
+        <button type="submit">Confirm Appointment</button>
+
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
